@@ -142,7 +142,7 @@ header .logo-contrast {
 }
 
 .navigation .active .current-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -192,11 +192,9 @@ header address a:active {
 }
 
 .mail {
-
   fill: currentColor;
 }
 .tel {
-
   fill: currentColor;
 }
 
@@ -370,7 +368,7 @@ h1 {
 
   letter-spacing: 0.01em;
 
-  color: var(--minor-text-color)
+  color: var(--minor-text-color);
 }
 
 .name-form .data {
@@ -432,8 +430,7 @@ h1 {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(../images/sprite.svg#name-icon)
-  fill: #212121;
+  background-image: url(../images/sprite.svg#name-icon) fill #212121;
   background-size: contain;
   background-repeat: no-repeat;
   border-radius: 4px;
@@ -446,7 +443,6 @@ h1 {
   display: inline-flex;
 }
 
-
 .checkbox-input:checked + .checkbox-custom-box {
   background-image: url(../images/icons/chek-icon.svg);
   background-size: contain;
@@ -455,8 +451,6 @@ h1 {
   background-color: var(--icons-contrast-color);
   border: 1px solid var(--icons-contrast-color);
 }
-
-
 
 .checkbox-input:focus + .checkbox-custom-box {
   box-sizing: content-box;
@@ -962,7 +956,7 @@ h6 {
 }
 
 .subscription .sub-button::after {
-  content: '';
+  content: "";
   display: block;
   margin-left: 10px;
   width: 24px;
