@@ -235,7 +235,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  background-color: var(--main-background-color);
+  background-color: $main-background-color;
   background-image: url(../images/sprite.svg#close-icon);
   background-repeat: no-repeat;
   background-position: center;
