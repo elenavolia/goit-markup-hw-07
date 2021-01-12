@@ -1,0 +1,61 @@
+.advantages {
+  font-family: $font-family-main;
+  letter-spacing: 0.03em;
+  box-sizing: content-box;
+  padding-top: 94px;
+}
+
+.advantages .container {
+  padding-bottom: 0;
+}
+
+.advantages ul {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages li:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages h2 {
+  color: $section-background-color;
+}
+
+.advantages h3 {
+  font-family: $font-family-main;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: $main-text-color;
+  margin-bottom: 10px;
+}
+
+.advantages p {
+  font-family: $font-family-main;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  color: $minor-text-color;
+  width: 270px;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
+}
+.advantages-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+
+  background-color: $minor-button-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
