@@ -18,6 +18,22 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+
+  & .main-button {
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    background-color: $main-button-color;
+    color: $contrast-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: $main-button-color;
+
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 200px;
+  }
 }
 
 h1 {
@@ -26,20 +42,4 @@ h1 {
   text-transform: uppercase;
   text-align: center;
   padding-top: 200px;
-}
-
-.hero .main-button {
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  background-color: $main-button-color;
-  color: $contrast-text-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: $main-button-color;
-
-  margin-top: 30px;
-  width: 200px;
-  height: 50px;
-  margin-bottom: 200px;
 }

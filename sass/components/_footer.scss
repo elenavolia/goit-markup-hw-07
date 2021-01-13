@@ -1,52 +1,51 @@
 footer {
   background-color: $footer-background-color;
 }
-.footer-items {
-  align-items: baseline;
-  padding-top: 60px;
-}
-
-.footer-items a {
-  color: $footer-adress-color;
-}
-
 .page-footer {
   align-items: baseline;
   margin-left: 70px;
 }
 
-footer .logo {
-  font-family: $font-family-secondary;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: $contrast-text-color;
-}
-
-footer .logo-contrast {
-  color: $selected-text-color;
-}
-
 .footer-items {
   display: flex;
-}
-.footer-items ul {
   align-items: baseline;
-  font-family: $font-family-main;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  color: $contrast-text-color;
+  padding-top: 60px;
 
-  margin-top: 20px;
-  padding-bottom: 60px;
-}
-.footer-items li:not(:last-child) {
-  margin-bottom: 9px;
+  & a {
+    color: $footer-adress-color;
+  }
+
+  & ul {
+    align-items: baseline;
+    font-family: $font-family-main;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    color: $contrast-text-color;
+
+    margin-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  & .logo {
+    font-family: $font-family-secondary;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: $contrast-text-color;
+  }
+
+  & .logo-contrast {
+    color: $selected-text-color;
+  }
 }
 
 h6 {
@@ -61,24 +60,29 @@ h6 {
   color: $contrast-text-color;
   margin-bottom: 20px;
 }
+
 .subscription {
   margin-top: 12px;
   margin-left: 93px;
   width: 570px;
   height: 86px;
-}
 
-.subscription b {
-  margin-bottom: 20px;
-  display: block;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  & b {
+    margin-bottom: 20px;
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
-  color: #ffffff;
+    color: #ffffff;
+  }
+
+  & .input-sub {
+    display: flex;
+  }
 }
 
 .subscription .email {
@@ -92,18 +96,18 @@ h6 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-}
 
-.subscription .email::placeholder {
-  font-style: 400;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
+  &::placeholder {
+    font-style: 400;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
 
-  align-items: center;
-  letter-spacing: 0.03em;
+    align-items: center;
+    letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .subscription .sub-button {
@@ -124,17 +128,31 @@ h6 {
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  &::after {
+    content: "";
+    display: block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+  }
 }
 
-.subscription .input-sub {
+footer .sm-item .sm-link {
+  height: 44px;
+  width: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+footer .sm-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer .sm {
   display: flex;
-}
-
-.subscription .sub-button::after {
-  content: "";
-  display: block;
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icon-send.svg);
 }

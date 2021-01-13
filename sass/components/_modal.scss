@@ -13,10 +13,10 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
+  & .modal {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
 }
 
 .modal {
@@ -34,49 +34,82 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal b {
-  display: inline-block;
-  margin-bottom: 12px;
-  font-style: bold;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
+  & b {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
 
-  color: #212121;
-}
+    color: #212121;
+  }
 
-.modal .exit-btn {
-  display: flex;
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 8px;
-  margin-right: 8px;
-  width: 30px;
-  height: 30px;
+  & .exit-btn {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
 
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
 
-  background-color: $section-background-color;
+    background-color: $section-background-color;
 
-  cursor: pointer;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-.modal .exit-btn:hover,
-.modal .exit-btn:focus {
-  color: $icons-contrast-color;
-  cursor: pointer;
-}
+    &:hover,
+    &:focus {
+      color: $icons-contrast-color;
+      cursor: pointer;
+    }
 
-.exit-btn .icon-btn {
-  margin: auto;
-  fill: currentColor;
+    & .icon-btn {
+      margin: auto;
+      fill: currentColor;
+    }
+  }
+  & .form-btn {
+    padding: 10px 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $section-background-color;
+    background: $icons-contrast-color;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+
+  & & .close-button {
+    margin-top: 8px;
+    margin-right: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+
+    background-color: $main-background-color;
+    background-image: url(../images/sprite.svg#close-icon);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
 }
 
 .name-form .input-block {
@@ -123,15 +156,15 @@
   border-radius: 4px;
   height: 40px;
   width: 100%;
-}
 
-.data:focus {
-  border: 1px solid $selected-text-color;
-  outline: none;
-}
+  &:focus {
+    border: 1px solid $selected-text-color;
+    outline: none;
+  }
 
-.data:focus + .icon-input {
-  fill: $selected-text-color;
+  &:focus + .icon-input {
+    fill: $selected-text-color;
+  }
 }
 
 .name-form .data.area {
@@ -206,38 +239,4 @@
   color: $icons-lines-color;
   text-decoration: underline;
   text-decoration-skip-ink: none;
-}
-
-.modal .form-btn {
-  padding: 10px 55px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: $section-background-color;
-  background: $icons-contrast-color;
-  border: none;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.modal .close-button {
-  margin-top: 8px;
-  margin-right: 8px;
-
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-
-  background-color: $main-background-color;
-  background-image: url(../images/sprite.svg#close-icon);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
 }

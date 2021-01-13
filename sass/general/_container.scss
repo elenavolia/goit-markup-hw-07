@@ -3,18 +3,17 @@
   padding-right: 15px;
   padding-left: 15px;
   margin: 0px auto 0px auto;
-}
 
-header .container,
-footer .container {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+  header & {
+    background-color: $section-background-color;
 
-header .container {
-  background-color: var(--section-background-color);
-
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+  }
+  header &,
+  footer & {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
