@@ -219,6 +219,13 @@
 
 .checkbox-text {
   display: inline-flex;
+
+  & .agreement {
+    padding-left: 5px;
+    color: $icons-contrast-color;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
 }
 
 .checkbox-input:checked + .checkbox-custom-box {
@@ -233,10 +240,4 @@
 .checkbox-input:focus + .checkbox-custom-box {
   box-sizing: content-box;
   border-radius: 4px;
-}
-
-.checkbox-label a {
-  color: $icons-lines-color;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
 }
